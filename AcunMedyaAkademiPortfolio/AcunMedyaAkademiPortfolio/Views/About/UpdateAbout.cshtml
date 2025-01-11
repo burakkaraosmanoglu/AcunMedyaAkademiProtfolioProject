@@ -1,0 +1,28 @@
+﻿@model AcunMedyaAkademiPortfolio.Models.TblAbout
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Hakkımda</h2>
+<form method="post">
+    <label>Hakkında id</label>
+    @Html.TextBoxFor(x => x.AboutID, new { @class = "table table-bordered" })
+    <br />
+
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "table table-bordered" })
+    <br />
+
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "table table-bordered" })
+    <br />
+
+    <label>Resim</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "table table-bordered" })
+    <br />
+
+    <button class="btn btn-success">proje güncelle</button>
+</form>
+
+
